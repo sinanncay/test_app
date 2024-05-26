@@ -85,14 +85,14 @@ function App() {
   return (
     <div className="App">
       <Grid container spacing={2}>
-        <Grid item xs={1} xl={4}>
+        <Grid item xs={1} md={3.5} xl={4}>
         </Grid>
-        <Grid item xs={10} xl={4} style={{ paddingTop: '2rem' }}>
-             <img src={image} alt='' style={{ width: '40%' }}/><br></br>
-             <img src={image2} alt='' style={{ width: '40%' }}/>
+        <Grid item xs={10} md={5} xl={4} style={{ paddingTop: '2rem' }}>
+             <img src={image} alt='' style={{ width: '35%' }}/><br></br>
+             <img src={image2} alt='' style={{ width: '35%' }}/>
              <Autocomplete
                id="example_autocomplete"
-               sx={{ minWidth: '100%', width: '100%', backgroundColor: 'white', padding: 0.8, borderRadius: 3 }}
+               sx={{ minWidth: '90%', width: '90%', backgroundColor: 'white', padding: 0.8, borderRadius: 3 }}
                options={filteredDatas}
                autoHighlight
                multiple
@@ -162,7 +162,7 @@ function App() {
                )}
              />
         </Grid>
-        <Grid item xs={1} xl={4}>
+        <Grid item xs={1} md={3.5} xl={4}>
         </Grid>
       </Grid>
    
