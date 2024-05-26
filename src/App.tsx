@@ -52,10 +52,10 @@ function App() {
        response = await ApiFunction(`?name=${params}`, {}, "get");
     }
     if(!(typeof response === 'string')){
-      await sleep(3000); // I have added sleep for data instantly loaded and doesnt show load statement
+      await sleep(1500); // I have added sleep for data instantly loaded and doesnt show load statement
       await setFilteredDatas(response?.data.results);
     }else{
-      await sleep(3000);
+      await sleep(1500);
       setFilteredDatas([]);
       setNoOptionText(response); // This error coming from api and no more option text added
     }
