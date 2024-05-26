@@ -92,7 +92,7 @@ function App() {
              <img src={image2} alt='' style={{ width: '35%' }}/>
              <Autocomplete
                id="example_autocomplete"
-               sx={{ minWidth: '90%', width: '90%', backgroundColor: 'white', padding: 0.8, borderRadius: 3 }}
+               sx={{ minWidth: '100%', width: '100%', backgroundColor: 'white', padding: 0.8, borderRadius: 3 }}
                options={filteredDatas}
                autoHighlight
                multiple
